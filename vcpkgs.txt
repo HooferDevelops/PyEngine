@@ -1,0 +1,3 @@
+sfml:x64-windows
+pybind11
+magic-enum:x64-windows

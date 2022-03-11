@@ -1,0 +1,10 @@
+^D:\VISUAL STUDIO PROJECTS\SOURCE\REPOS\PYENGINE\OUT\BUILD\X64-DEBUG\CMAKEFILES\72BA91693952A8120203CFD6D27EB09E\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" "-SD:/Visual Studio Projects/source/repos/PyEngine" "-BD:/Visual Studio Projects/source/repos/PyEngine/out/build/x64-Debug" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "D:/Visual Studio Projects/source/repos/PyEngine/out/build/x64-Debug/PyEngine.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
