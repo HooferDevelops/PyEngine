@@ -26,6 +26,8 @@ PYBIND11_EMBEDDED_MODULE(test, m) {
 		.def(py::init<int, int, string>())
 		.def("display", &Window::display)
 		.def("close", &Window::close)
+		.def("clear", &Window::clear)
+		.def("setCursorVisibility", &Window::setCursorVisibility)
 		.def("getWindowState", &Window::getWindowState);
 	// Function for Disabling Running
 	m.def("stopTick", &disableTicking);

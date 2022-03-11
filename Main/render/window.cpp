@@ -26,6 +26,10 @@ void Window::close() {
 	window.close();
 }
 
+void Window::setCursorVisibility(bool visible) {
+	window.setMouseCursorVisible(visible);
+}
+
 vector<string> Window::getWindowState() {
 	sf::Event event;
 

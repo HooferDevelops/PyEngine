@@ -18,5 +18,6 @@ public:
 	void display();
 	void clear();
 	void close();
+	void setCursorVisibility(bool visible);
 	vector<string> getWindowState();
 };
